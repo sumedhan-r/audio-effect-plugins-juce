@@ -41,9 +41,12 @@
 *.dwo
 
 # JUCE/Projucer
-
 **/Builds/
 **/JuceLibraryCode/
+
+# XCode
+**/*.xcuserstate
+**/xcuserdata/
 
 # DS_Store
 *.DS_Store
