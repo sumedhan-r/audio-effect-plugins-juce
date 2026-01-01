@@ -5,6 +5,8 @@
               cppLanguageStandard="20">
   <MAINGROUP id="P00WpX" name="01_Learn_Delay">
     <GROUP id="{F883D686-1D0B-2494-AAE9-F968D15F5C2E}" name="Source">
+      <FILE id="JF6d4d" name="Parameters.cpp" compile="1" resource="0" file="Source/Parameters.cpp"/>
+      <FILE id="jvd31K" name="Parameters.h" compile="0" resource="0" file="Source/Parameters.h"/>
       <FILE id="v7ke5W" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="ZUSENi" name="PluginProcessor.h" compile="0" resource="0"
@@ -26,6 +28,7 @@
     <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
     <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
     <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
     <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
     <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
     <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
@@ -52,6 +55,7 @@
         <MODULEPATH id="juce_graphics" path="../modules"/>
         <MODULEPATH id="juce_gui_basics" path="../modules"/>
         <MODULEPATH id="juce_gui_extra" path="../modules"/>
+        <MODULEPATH id="juce_dsp" path="../modules"/>
       </MODULEPATHS>
     </ANDROIDSTUDIO>
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
@@ -73,6 +77,7 @@
         <MODULEPATH id="juce_graphics" path="../modules"/>
         <MODULEPATH id="juce_gui_basics" path="../modules"/>
         <MODULEPATH id="juce_gui_extra" path="../modules"/>
+        <MODULEPATH id="juce_dsp" path="../modules"/>
       </MODULEPATHS>
     </LINUX_MAKE>
     <VS2026 targetFolder="Builds/VisualStudio2026">
@@ -94,6 +99,7 @@
         <MODULEPATH id="juce_graphics" path="../modules"/>
         <MODULEPATH id="juce_gui_basics" path="../modules"/>
         <MODULEPATH id="juce_gui_extra" path="../modules"/>
+        <MODULEPATH id="juce_dsp" path="../modules"/>
       </MODULEPATHS>
     </VS2026>
     <XCODE_IPHONE targetFolder="Builds/iOS">
@@ -115,6 +121,7 @@
         <MODULEPATH id="juce_graphics" path="../modules"/>
         <MODULEPATH id="juce_gui_basics" path="../modules"/>
         <MODULEPATH id="juce_gui_extra" path="../modules"/>
+        <MODULEPATH id="juce_dsp" path="../modules"/>
       </MODULEPATHS>
     </XCODE_IPHONE>
     <XCODE_MAC targetFolder="Builds/MacOSX">
@@ -137,6 +144,7 @@
         <MODULEPATH id="juce_graphics" path="../modules"/>
         <MODULEPATH id="juce_gui_basics" path="../modules"/>
         <MODULEPATH id="juce_gui_extra" path="../modules"/>
+        <MODULEPATH id="juce_dsp" path="../modules"/>
       </MODULEPATHS>
     </XCODE_MAC>
   </EXPORTFORMATS>
