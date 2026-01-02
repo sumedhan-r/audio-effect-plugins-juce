@@ -40,6 +40,7 @@ static juce::String stringFromPercent(float value, int) {
 Parameters::Parameters(juce::AudioProcessorValueTreeState &apvts) {
   castParameter(apvts, gainParamID, gainParam);
   castParameter(apvts, delayTimeParamID, delayTimeParam);
+  castParameter(apvts, mixParamID, mixParam);
 }
 
 juce::AudioProcessorValueTreeState::ParameterLayout

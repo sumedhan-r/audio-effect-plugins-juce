@@ -40,7 +40,7 @@ public:
   float coeff = 0.0f;
 
   // Mix for dry and wet samples from delay line
-  float mix = 0.0f;
+  float mix = 1.0f;
 
 private:
   juce::AudioParameterFloat *gainParam;
