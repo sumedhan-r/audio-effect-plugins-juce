@@ -124,10 +124,10 @@ bool A0LearnDelayAudioProcessor::isBusesLayoutSupported(
 void A0LearnDelayAudioProcessor::processBlock(
     juce::AudioBuffer<float> &buffer,
     [[maybe_unused]] juce::MidiBuffer &midiMessages) {
-  j // DeNormals are values below lowerst floating point. This ensures that
-    // float is approximated to zero at values < 10^(-38) and does not lead
-    // to sudden CPU usage spike.
-      juce::ScopedNoDenormals noDenormals;
+  // DeNormals are values below lowerst floating point. This ensures that
+  // float is approximated to zero at values < 10^(-38) and does not lead
+  // to sudden CPU usage spike.
+  juce::ScopedNoDenormals noDenormals;
 
   auto totalNumInputChannels = getTotalNumInputChannels();
   auto totalNumOutputChannels = getTotalNumOutputChannels();
