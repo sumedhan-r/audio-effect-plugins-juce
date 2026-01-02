@@ -14,10 +14,10 @@
 //==============================================================================
 /**
  */
-class _01_Learn_DelayAudioProcessorEditor : public juce::AudioProcessorEditor {
+class A0LearnDelayAudioProcessorEditor : public juce::AudioProcessorEditor {
 public:
-  _01_Learn_DelayAudioProcessorEditor(_01_Learn_DelayAudioProcessor &);
-  ~_01_Learn_DelayAudioProcessorEditor() override;
+  A0LearnDelayAudioProcessorEditor(A0LearnDelayAudioProcessor &);
+  ~A0LearnDelayAudioProcessorEditor() override;
 
   //==============================================================================
   void paint(juce::Graphics &) override;
@@ -26,8 +26,7 @@ public:
 private:
   // This reference is provided as a quick way for your editor to
   // access the processor object that created it.
-  _01_Learn_DelayAudioProcessor &audioProcessor;
+  A0LearnDelayAudioProcessor &audioProcessor;
 
-  JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(
-      _01_Learn_DelayAudioProcessorEditor)
+  JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(A0LearnDelayAudioProcessorEditor)
 };

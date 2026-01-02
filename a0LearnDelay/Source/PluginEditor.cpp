@@ -10,29 +10,30 @@
 #include "PluginProcessor.h"
 
 //==============================================================================
-_01_Learn_DelayAudioProcessorEditor::_01_Learn_DelayAudioProcessorEditor(
-    _01_Learn_DelayAudioProcessor &p)
+A0LearnDelayAudioProcessorEditor::A0LearnDelayAudioProcessorEditor(
+    A0LearnDelayAudioProcessor &p)
     : AudioProcessorEditor(&p), audioProcessor(p) {
   // Make sure that before the constructor has finished, you've set the
   // editor's size to whatever you need it to be.
   setSize(400, 300);
 }
 
-_01_Learn_DelayAudioProcessorEditor::~_01_Learn_DelayAudioProcessorEditor() {}
+A0LearnDelayAudioProcessorEditor::~A0LearnDelayAudioProcessorEditor() {}
 
 //==============================================================================
-void _01_Learn_DelayAudioProcessorEditor::paint(juce::Graphics &g) {
+void A0LearnDelayAudioProcessorEditor::paint(juce::Graphics &g) {
   // (Our component is opaque, so we must completely fill the background with a
   // solid colour)
-  g.fillAll(juce::Colours::blueviolet); // change_1
+  g.fillAll(
+      getLookAndFeel().findColour(juce::ResizableWindow::backgroundColourId));
 
   g.setColour(juce::Colours::white);
-  g.setFont(juce::FontOptions(40.0f)); // change_2
-  g.drawFittedText("My first plug-in", getLocalBounds(),
-                   juce::Justification::centred, 1); // change_3
+  g.setFont(juce::FontOptions(15.0f));
+  g.drawFittedText("Hello World!", getLocalBounds(),
+                   juce::Justification::centred, 1);
 }
 
-void _01_Learn_DelayAudioProcessorEditor::resized() {
+void A0LearnDelayAudioProcessorEditor::resized() {
   // This is generally where you'll want to lay out the positions of any
   // subcomponents in your editor..
 }

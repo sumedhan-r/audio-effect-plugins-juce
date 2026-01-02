@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="nK0Q0t" name="01_Learn_Delay" projectType="audioplug" useAppConfig="0"
+<JUCERPROJECT id="aqP5Pa" name="a0LearnDelay" projectType="audioplug" useAppConfig="0"
               addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" pluginFormats="buildAU,buildAUv3,buildStandalone,buildVST3"
               cppLanguageStandard="20">
-  <MAINGROUP id="P00WpX" name="01_Learn_Delay">
-    <GROUP id="{F883D686-1D0B-2494-AAE9-F968D15F5C2E}" name="Source">
-      <FILE id="JF6d4d" name="Parameters.cpp" compile="1" resource="0" file="Source/Parameters.cpp"/>
-      <FILE id="jvd31K" name="Parameters.h" compile="0" resource="0" file="Source/Parameters.h"/>
-      <FILE id="v7ke5W" name="PluginProcessor.cpp" compile="1" resource="0"
+  <MAINGROUP id="XWqKJO" name="a0LearnDelay">
+    <GROUP id="{15F56E7A-8594-AD5E-4C84-F5920C064259}" name="Source">
+      <FILE id="n7rgtJ" name="Parameters.cpp" compile="1" resource="0" file="Source/Parameters.cpp"/>
+      <FILE id="FlcNRw" name="Parameters.h" compile="0" resource="0" file="Source/Parameters.h"/>
+      <FILE id="EurAf6" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
-      <FILE id="ZUSENi" name="PluginProcessor.h" compile="0" resource="0"
+      <FILE id="cc7hCN" name="PluginProcessor.h" compile="0" resource="0"
             file="Source/PluginProcessor.h"/>
-      <FILE id="lMHtfl" name="PluginEditor.cpp" compile="1" resource="0"
+      <FILE id="kYcDNV" name="PluginEditor.cpp" compile="1" resource="0"
             file="Source/PluginEditor.cpp"/>
-      <FILE id="Niec8L" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="B5qRO6" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
     </GROUP>
   </MAINGROUP>
   <MODULES>
@@ -38,8 +38,8 @@
   <EXPORTFORMATS>
     <ANDROIDSTUDIO targetFolder="Builds/Android">
       <CONFIGURATIONS>
-        <CONFIGURATION isDebug="1" name="Debug" targetName="01_Learn_Delay"/>
-        <CONFIGURATION isDebug="0" name="Release" targetName="01_Learn_Delay"/>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="a0LearnDelay"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="a0LearnDelay"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_audio_basics" path="../modules"/>
@@ -51,17 +51,17 @@
         <MODULEPATH id="juce_audio_utils" path="../modules"/>
         <MODULEPATH id="juce_core" path="../modules"/>
         <MODULEPATH id="juce_data_structures" path="../modules"/>
+        <MODULEPATH id="juce_dsp" path="../modules"/>
         <MODULEPATH id="juce_events" path="../modules"/>
         <MODULEPATH id="juce_graphics" path="../modules"/>
         <MODULEPATH id="juce_gui_basics" path="../modules"/>
         <MODULEPATH id="juce_gui_extra" path="../modules"/>
-        <MODULEPATH id="juce_dsp" path="../modules"/>
       </MODULEPATHS>
     </ANDROIDSTUDIO>
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
       <CONFIGURATIONS>
-        <CONFIGURATION isDebug="1" name="Debug" targetName="01_Learn_Delay"/>
-        <CONFIGURATION isDebug="0" name="Release" targetName="01_Learn_Delay"/>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="a0LearnDelay"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="a0LearnDelay"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_audio_basics" path="../modules"/>
@@ -73,17 +73,17 @@
         <MODULEPATH id="juce_audio_utils" path="../modules"/>
         <MODULEPATH id="juce_core" path="../modules"/>
         <MODULEPATH id="juce_data_structures" path="../modules"/>
+        <MODULEPATH id="juce_dsp" path="../modules"/>
         <MODULEPATH id="juce_events" path="../modules"/>
         <MODULEPATH id="juce_graphics" path="../modules"/>
         <MODULEPATH id="juce_gui_basics" path="../modules"/>
         <MODULEPATH id="juce_gui_extra" path="../modules"/>
-        <MODULEPATH id="juce_dsp" path="../modules"/>
       </MODULEPATHS>
     </LINUX_MAKE>
     <VS2026 targetFolder="Builds/VisualStudio2026">
       <CONFIGURATIONS>
-        <CONFIGURATION isDebug="1" name="Debug" targetName="01_Learn_Delay"/>
-        <CONFIGURATION isDebug="0" name="Release" targetName="01_Learn_Delay"/>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="a0LearnDelay"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="a0LearnDelay"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_audio_basics" path="../modules"/>
@@ -95,17 +95,17 @@
         <MODULEPATH id="juce_audio_utils" path="../modules"/>
         <MODULEPATH id="juce_core" path="../modules"/>
         <MODULEPATH id="juce_data_structures" path="../modules"/>
+        <MODULEPATH id="juce_dsp" path="../modules"/>
         <MODULEPATH id="juce_events" path="../modules"/>
         <MODULEPATH id="juce_graphics" path="../modules"/>
         <MODULEPATH id="juce_gui_basics" path="../modules"/>
         <MODULEPATH id="juce_gui_extra" path="../modules"/>
-        <MODULEPATH id="juce_dsp" path="../modules"/>
       </MODULEPATHS>
     </VS2026>
     <XCODE_IPHONE targetFolder="Builds/iOS">
       <CONFIGURATIONS>
-        <CONFIGURATION isDebug="1" name="Debug" targetName="01_Learn_Delay"/>
-        <CONFIGURATION isDebug="0" name="Release" targetName="01_Learn_Delay"/>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="a0LearnDelay"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="a0LearnDelay"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_audio_basics" path="../modules"/>
@@ -117,18 +117,18 @@
         <MODULEPATH id="juce_audio_utils" path="../modules"/>
         <MODULEPATH id="juce_core" path="../modules"/>
         <MODULEPATH id="juce_data_structures" path="../modules"/>
+        <MODULEPATH id="juce_dsp" path="../modules"/>
         <MODULEPATH id="juce_events" path="../modules"/>
         <MODULEPATH id="juce_graphics" path="../modules"/>
         <MODULEPATH id="juce_gui_basics" path="../modules"/>
         <MODULEPATH id="juce_gui_extra" path="../modules"/>
-        <MODULEPATH id="juce_dsp" path="../modules"/>
       </MODULEPATHS>
     </XCODE_IPHONE>
     <XCODE_MAC targetFolder="Builds/MacOSX">
       <CONFIGURATIONS>
-        <CONFIGURATION isDebug="1" name="Debug" targetName="01_Learn_Delay" enablePluginBinaryCopyStep="1"
-                       recommendedWarnings="LLVM"/>
-        <CONFIGURATION isDebug="0" name="Release" targetName="01_Learn_Delay"/>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="a0LearnDelay" recommendedWarnings="LLVM"
+                       enablePluginBinaryCopyStep="1"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="a0LearnDelay"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_audio_basics" path="../modules"/>
@@ -140,11 +140,11 @@
         <MODULEPATH id="juce_audio_utils" path="../modules"/>
         <MODULEPATH id="juce_core" path="../modules"/>
         <MODULEPATH id="juce_data_structures" path="../modules"/>
+        <MODULEPATH id="juce_dsp" path="../modules"/>
         <MODULEPATH id="juce_events" path="../modules"/>
         <MODULEPATH id="juce_graphics" path="../modules"/>
         <MODULEPATH id="juce_gui_basics" path="../modules"/>
         <MODULEPATH id="juce_gui_extra" path="../modules"/>
-        <MODULEPATH id="juce_dsp" path="../modules"/>
       </MODULEPATHS>
     </XCODE_MAC>
   </EXPORTFORMATS>

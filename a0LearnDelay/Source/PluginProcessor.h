@@ -14,11 +14,11 @@
 //==============================================================================
 /**
  */
-class _01_Learn_DelayAudioProcessor : public juce::AudioProcessor {
+class A0LearnDelayAudioProcessor : public juce::AudioProcessor {
 public:
   //==============================================================================
-  _01_Learn_DelayAudioProcessor();
-  ~_01_Learn_DelayAudioProcessor() override;
+  A0LearnDelayAudioProcessor();
+  ~A0LearnDelayAudioProcessor() override;
 
   //==============================================================================
   void prepareToPlay(double sampleRate, int samplesPerBlock) override;
@@ -55,11 +55,19 @@ public:
 
 private:
   //==============================================================================
-  JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(_01_Learn_DelayAudioProcessor)
+  JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(A0LearnDelayAudioProcessor)
 
   // parameter object for gain feature
   juce::AudioProcessorValueTreeState apvts{*this, nullptr, "Parameters",
                                            Parameters::createParameterLayout()};
 
   Parameters params;
+
+  /*
+   This is a class template. Required arguments
+      - Samples data type
+      - Interpolationmethod for in-between/fractional samples
+  */
+  juce::dsp::DelayLine<float, juce::dsp::DelayLineInterpolationTypes::Linear>
+      delayLine;
 };
