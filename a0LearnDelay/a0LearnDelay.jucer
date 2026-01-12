@@ -5,9 +5,9 @@
               cppLanguageStandard="20">
   <MAINGROUP id="XWqKJO" name="a0LearnDelay">
     <GROUP id="{74E8912E-0619-1C81-F8AF-21D829F1F4B0}" name="Assets">
-      <FILE id="JX0K2e" name="Lato-Medium.ttf" compile="0" resource="1" file="../../audio-effect-plugins-juce/Resources/a0LearnDelay/Lato-Medium.ttf"/>
-      <FILE id="klcg4A" name="Logo.png" compile="0" resource="1" file="../../audio-effect-plugins-juce/Resources/a0LearnDelay/Logo.png"/>
-      <FILE id="Wc6z7c" name="Noise.png" compile="0" resource="1" file="../../audio-effect-plugins-juce/Resources/a0LearnDelay/Noise.png"/>
+      <FILE id="cLmgMm" name="Lato-Medium.ttf" compile="0" resource="1" file="Assets/Lato-Medium.ttf"/>
+      <FILE id="EhOLIf" name="Logo.png" compile="0" resource="1" file="Assets/Logo.png"/>
+      <FILE id="bXuIJE" name="Noise.png" compile="0" resource="1" file="Assets/Noise.png"/>
     </GROUP>
     <GROUP id="{15F56E7A-8594-AD5E-4C84-F5920C064259}" name="Source">
       <FILE id="j3XO8o" name="LookAndFeel.cpp" compile="1" resource="0" file="Source/LookAndFeel.cpp"/>
