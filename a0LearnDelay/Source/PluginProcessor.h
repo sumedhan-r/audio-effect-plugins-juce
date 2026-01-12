@@ -53,13 +53,16 @@ public:
   void getStateInformation(juce::MemoryBlock &destData) override;
   void setStateInformation(const void *data, int sizeInBytes) override;
 
+  //==============================================================================
+
+  // Parameter object for all plug-in features based on Value Tree State class.
+  // This is the most common way to do it and other ways needs to be explored.
+  juce::AudioProcessorValueTreeState apvts{*this, nullptr, "Parameters",
+                                           Parameters::createParameterLayout()};
+
 private:
   //==============================================================================
   JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(A0LearnDelayAudioProcessor)
-
-  // parameter object for gain feature
-  juce::AudioProcessorValueTreeState apvts{*this, nullptr, "Parameters",
-                                           Parameters::createParameterLayout()};
 
   Parameters params;
 

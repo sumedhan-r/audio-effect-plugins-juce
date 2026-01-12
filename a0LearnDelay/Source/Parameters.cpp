@@ -33,6 +33,17 @@ static juce::String stringFromMilliseconds(float value, int) {
     return juce::String(value * 0.001f, 2) + " s";
 }
 
+static float millisecondsFromString(const juce::String &text) {
+  float value = text.getFloatValue();
+
+  if (!text.endsWithIgnoreCase("ms")) {
+    if (text.endsWithIgnoreCase("s") || value < Parameters::minDelayTime)
+      return value * 1000.0f;
+  }
+
+  return value;
+}
+
 static juce::String stringFromPercent(float value, int) {
   return juce::String(int(value)) + " %";
 }
@@ -58,8 +69,9 @@ Parameters::createParameterLayout() {
       // min threshold, max, threshold, step increment, skew factor
       juce::NormalisableRange<float>{minDelayTime, maxDelayTime, 0.001f, 0.25f},
       100.0f,
-      juce::AudioParameterFloatAttributes().withStringFromValueFunction(
-          stringFromMilliseconds)));
+      juce::AudioParameterFloatAttributes()
+          .withStringFromValueFunction(stringFromMilliseconds)
+          .withValueFromStringFunction(millisecondsFromString)));
 
   layout.add(std::make_unique<juce::AudioParameterFloat>(
       mixParamID, "Mix",

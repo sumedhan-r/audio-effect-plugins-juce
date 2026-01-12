@@ -42,7 +42,10 @@
 
 # JUCE/Projucer
 **/Builds/
-**/JuceLibraryCode/
+**/JuceLibraryCode/*
+
+# Including select files in Juce Library Code
+!**/JuceLibraryCode/BinaryData.*
 
 # XCode
 **/*.xcuserstate

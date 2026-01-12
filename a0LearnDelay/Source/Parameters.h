@@ -43,6 +43,17 @@ public:
   float mix = 1.0f;
 
 private:
+  /*
+   Below is a macro that is used for two purposes
+
+      1) No copy constructor and copy assignment operator is used
+         by this class, since having a copy of the plug-in class
+         object is not desirable for us
+      2) Leak detector ensures memory deallocation happens for
+         out-of-scope instance without specific intervention
+  */
+  JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(Parameters)
+
   juce::AudioParameterFloat *gainParam;
   juce::LinearSmoothedValue<float> gainSmoother;
 

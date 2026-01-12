@@ -8,7 +8,10 @@
 
 #pragma once
 
+#include "LookAndFeel.h"
+#include "Parameters.h"
 #include "PluginProcessor.h"
+#include "RotaryKnob.h"
 #include <JuceHeader.h>
 
 //==============================================================================
@@ -29,4 +32,16 @@ private:
   A0LearnDelayAudioProcessor &audioProcessor;
 
   JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(A0LearnDelayAudioProcessorEditor)
+
+  // Grouping the rotary knobs in the UI for better distinction of
+  // each plug-in feature/slider/knob built.
+  juce::GroupComponent delayGroup, feedbackGroup, outputGroup;
+
+  // Rotary knob is a slider object under JUCE
+  RotaryKnob gainKnob{"Gain", audioProcessor.apvts, gainParamID, true};
+  RotaryKnob mixKnob{"Mix", audioProcessor.apvts, mixParamID};
+  RotaryKnob delayTimeKnob{"Delay Time", audioProcessor.apvts,
+                           delayTimeParamID};
+
+  MainLookAndFeel mainLF;
 };
